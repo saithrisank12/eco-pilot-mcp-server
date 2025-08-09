@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 
 // Validate tool required by Puch AI
 app.post("/validate", (req, res) => {
-  return res.json({ phone: process.env.PHONE_NUMBER || "8331990822" });
+  return res.json({ phone: process.env.PHONE_NUMBER || "918331990822" });
 });
 
 // Main tool endpoint to handle different tools
