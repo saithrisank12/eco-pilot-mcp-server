@@ -1,24 +1,22 @@
 {
   "name": "eco-pilot-mcp-server",
   "version": "1.0.0",
-  "description": "eco-pilot-mcp-server",
+  "description": "Eco Pilot MCP Server",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/saithrisank12/eco-pilot-mcp-server.git"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/saithrisank12/eco-pilot-mcp-server/issues"
-  },
-  "homepage": "https://github.com/saithrisank12/eco-pilot-mcp-server#readme",
   "dependencies": {
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0"
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
