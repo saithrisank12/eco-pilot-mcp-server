@@ -1,15 +1,17 @@
 {
   "name": "eco-pilot-mcp-server",
   "version": "1.0.0",
+  "description": "Eco Pilot MCP Server",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "engines": {
-    "node": ">=18.x"
+    "node": "22.x"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2"
   }
 }
