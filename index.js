@@ -9,6 +9,11 @@ const BEARER_TOKEN = process.env.BEARER_TOKEN || "mcp123token";
 
 app.use(express.json());
 
+// Health check endpoint for Railway
+app.get("/", (req, res) => {
+  res.send("✅ Eco Pilot MCP Server is running!");
+});
+
 // Middleware for Bearer token authentication
 app.use((req, res, next) => {
   const authHeader = req.headers["authorization"];
@@ -92,7 +97,7 @@ app.post("/call-tool", (req, res) => {
     });
   }
 
-  // Product Scan Tool (FIXED)
+  // Product Scan Tool
   if (toolName === "productScan") {
     const { productLink } = params;
     if (!productLink) {
